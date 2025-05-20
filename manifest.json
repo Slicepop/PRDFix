@@ -4,7 +4,12 @@
   "version": "1.0",
   "description": "Extension used for the PRD",
   "permissions": ["activeTab"],
-
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+      "matches": ["https://idm.int.wmed.edu/*"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["https://idm.int.wmed.edu/*"],
